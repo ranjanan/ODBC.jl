@@ -12,6 +12,7 @@ let
                 @compat Libdl.dlopen(lib)
                 succeeded = true
                 break
+            catch
             end
         end
         succeeded || error("ODBC library not found")
